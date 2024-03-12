@@ -23,4 +23,11 @@ export type ModeWatcherProps = {
 	 * The theme colors to use for each mode.
 	 */
 	themeColors?: ThemeColors;
+
+	/**
+	 * Whether to disable transitions when the mode changes.
+	 *
+	 * @defaultValue `true`
+	 */
+	disableTransitions?: boolean;
 };

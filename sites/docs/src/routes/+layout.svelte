@@ -7,9 +7,9 @@
 	import { Footer } from "$lib/components/layout";
 </script>
 
+<ModeWatcher />
 <TwIndicator />
 <Metadata />
-<ModeWatcher />
 <Navbar />
 <div class="flex min-h-[calc(100vh-4rem)] flex-col">
 	<div class="flex-grow">

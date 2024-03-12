@@ -7,6 +7,7 @@
 		mode,
 		themeColors as themeColorsStore,
 		setInitialMode,
+		disableTransitions as disableTransitionsStore,
 	} from './mode.js';
 	import type { Mode, ModeWatcherProps, ThemeColors } from './types.js';
 	import { isValidMode } from './stores.js';
@@ -16,8 +17,10 @@
 	export let track = true;
 	export let defaultMode: Mode = 'system';
 	export let themeColors: ThemeColors = undefined;
+	export let disableTransitions = false;
 
 	themeColorsStore.set(themeColors);
+	disableTransitionsStore.set(disableTransitions);
 
 	onMount(() => {
 		const unsubscriber = mode.subscribe(() => {});
